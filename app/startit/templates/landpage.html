@@ -1,0 +1,16 @@
+{% block content %}
+
+<html>
+<body>
+
+<h1>Hello World!</h1>
+<p>Welcome to my first Django project!</p>
+<ul>
+    {% for x in products %}
+    <li><a href="details/{{ x.id }}">{{ x.itsname }} {{ x.price }} </a></li>
+    {% endfor %}
+  </ul>
+</body>
+</html>
+
+{% endblock %}
